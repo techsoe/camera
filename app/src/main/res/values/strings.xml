@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">camera</string>
+
+    <string name="acapulco">Acapulco</string>
+    <string name="amplaya">Ampalaya</string>
+    <string name="bayabas">Bayabas</string>
+    <string name="katakataka">Kataka-taka</string>
+    <string name="lagundi">Lagundi</string>
+    <string name="oregano">Oregano</string>
+    <string name="sambong">Sambong</string>
+    <string name="error">Unknown</string>
+
+</resources>

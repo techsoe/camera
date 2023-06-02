@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_gravity="center"
+android:background="@drawable/circle_background"
+android:padding="5dp"
+    >
+
+
+<ImageView
+    android:id="@+id/dialogImageView"
+    android:layout_gravity="center"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:background="@drawable/plant_sample"
+    />
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    />
+
+<TextView
+    android:id="@+id/resultTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/confidenceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="confidences"
+        android:textSize="16sp" />
+
+</LinearLayout>
