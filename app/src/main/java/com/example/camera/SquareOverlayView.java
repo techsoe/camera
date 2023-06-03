@@ -3,6 +3,7 @@ package com.example.camera;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -46,4 +47,6 @@ public class SquareOverlayView extends View {
 
         canvas.drawRect(left, top, right, bottom, squarePaint);
     }
+
+
 }

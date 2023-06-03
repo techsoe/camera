@@ -236,9 +236,15 @@ public class MainActivity extends AppCompatActivity {
             StringBuilder confidenceBuilder = new StringBuilder();
             confidenceBuilder.append("Confidences:\n");
             for (int i = 0; i < numClasses; i++) {
-                confidenceBuilder.append(classes[i]).append(": ").append(probabilities[i]).append("\n");
+                float confidencePercentage = probabilities[i] * 10;
+                if (confidencePercentage < 0) {
+                    confidencePercentage = 0;
+                }
+                confidenceBuilder.append(classes[i]).append(": ").append(String.format("%.2f", confidencePercentage)).append("%\n");
             }
             confidenceTextView.setText(confidenceBuilder.toString());
+
+
         } else {
             resultBuilder.append("Not matched!");
             resultTextView.setText(resultBuilder.toString());
